@@ -9,6 +9,7 @@ import {
   SmartLink,
   Text,
 } from "@once-ui-system/core";
+import { LightboxButton } from "@/components/ZoomableMedia";
 
 interface ProjectCardProps {
   href: string;
@@ -32,13 +33,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        items={images.map((image) => ({
-          slide: image,
-          alt: title,
-        }))}
-      />
+      <div style={{ position: "relative", width: "100%" }}>
+        <Carousel
+          sizes="(max-width: 960px) 100vw, 960px"
+          items={images.map((image) => ({
+            slide: image,
+            alt: title,
+          }))}
+        />
+        <LightboxButton images={images.map((src) => ({ src, alt: title }))} />
+      </div>
       <Flex
         mobileDirection="column"
         fillWidth

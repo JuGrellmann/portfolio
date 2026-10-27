@@ -22,6 +22,7 @@ import {
   Media,
   SmartLink,
 } from "@once-ui-system/core";
+import { ZoomableMedia } from "@/components/ZoomableMedia";
 
 type CustomLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string;
@@ -59,10 +60,9 @@ function createImage({ alt, src, ...props }: MediaProps & { src: string }) {
   }
 
   return (
-    <Media
+    <ZoomableMedia
       marginTop="8"
       marginBottom="16"
-      enlarge
       radius="m"
       aspectRatio="16 / 9"
       border="neutral-alpha-medium"
