@@ -8,7 +8,7 @@ const person = {
   },
   role: "Projetista Civil",
   avatar: "/images/avatar.jpg",
-  email: "grellmann.ju21@gmail.com",
+  email: "grellmann.js@gmail.com",
   location: "Brasil/São Paulo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Português", "Inglês"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -35,7 +35,7 @@ const social = [
   {
     name: "WhatsApp",
     icon: "whatsapp",
-    link: "https://wa.me/+555193287291",
+    link: "https://wa.me/+5512997752047",
   },
   {
     name: "Email",
@@ -84,10 +84,9 @@ const about = {
     title: "Introdução",
     description: (
       <>
-        Sou estudante de Engenharia Civil com experiência prática desde 2022 em obras residenciais e comerciais. Atuei em diversas fases do canteiro:
-        medições, controle de materiais, atualização de projetos, cronogramas, orçamentos e contato com fornecedores. Também participei de projetos
-        acadêmicos e sociais no PET Civil UFRGS. Hoje, busco unir o conhecimento técnico da execução com a elaboração de projetos completos,
-        otimizados e bem apresentados.
+        Sou estudante de Engenharia Civil com experiência de obra desde 2022, em projetos residenciais e comerciais.
+        Tenho experiência em medições, cronogramas e orçamentos. É essa vivência que guia a forma como
+        elaboro meus projetos: soluções que funcionam no papel e no canteiro.
       </>
     ),
   },
@@ -96,8 +95,30 @@ const about = {
     title: "Experiências",
     experiences: [
       {
+        company: "Obratech Projetos",
+        timeframe: "2026 - atualmente",
+        role: "Estagiária de Projetos Estruturais",
+        achievements: [
+          <>
+            Elaboração de projetos estruturais em concreto armado para
+            residências, do lançamento da estrutura ao detalhamento das pranchas. 
+          </>,
+          <>
+            Projeto e dimensionamento de piscinas e estruturas de contenção,
+            considerando as características do terreno e os esforços atuantes.
+          </>,
+          <>
+            Compatibilização com os projetos de arquitetura e de instalações,
+            garantindo otimização e evitando interferências e retrabalho na execução.
+          </>
+        ],
+        images: [
+          
+        ]
+      },
+      {
         company: "Self-employed",
-        timeframe: "2025 - atualmente",
+        timeframe: "2025 - 2026",
         role: "Auxiliar de Engenharia Civil",
         achievements: [
           <>
@@ -109,7 +130,7 @@ const about = {
             com fotos e análises de desempenho.
           </>,
           <>
-            Apoio no controle de materiais e serviços. Monitoramento das etapa
+            Apoio no controle de materiais e serviços. Monitoramento das etapas
             construtivas e comunicação com equipes de campo e escritório.
           </>
         ],
@@ -198,12 +219,12 @@ const about = {
     title: "Formação",
     institutions: [
       {
-        name: "Univali",
-        description: <>Bacharelado Engenharia Civil (2023 - 2025)</>,
+        name: "UFRGS",
+        description: <>Bacharelado Engenharia Civil </>,
       },
       {
         name: "Unip",
-        description: <>Bacharelado Engenharia Civil (2026 - cursando)</>,
+        description: <>Bacharelado Engenharia Civil (em andamento)</>,
       }
     ],
   },
@@ -244,6 +265,18 @@ const about = {
             {
         title: "Promob",
         description: <>Modelagem básica para mobiliário e interiores.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+            {
+        title: "AltoQi Eberick",
+        description: <>Modelagem, dimensionamento e detalhamento de estruturas de concreto armado.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+            {
+        title: "AltoQi Builder",
+        description: <>Modelagem e detalhamento de instalações elétricas e hidrossanitárias compatibilizadas em BIM.</>,
         // optional: leave the array empty if you don't want to display images
         images: [],
       },
